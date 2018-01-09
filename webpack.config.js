@@ -52,6 +52,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
+      favicon: 'src/images/favicon.png',
       template:'template.ejs',
       appMountId: 'react-app-root',
       title: 'B.M.H Gallery',
