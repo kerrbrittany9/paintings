@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import About from './About';
 
 function Menu(props) {
   var menu = {
@@ -6,9 +8,9 @@ function Menu(props) {
   }
   return (
     <div style={menu}>
-      <h3>about</h3>
-      <h3>gallery</h3>
-      <h3>drawings</h3>
+        <About />
+        <h3>gallery</h3>
+        <h3>drawings</h3>
     </div>
   );
 }

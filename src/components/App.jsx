@@ -6,7 +6,8 @@ import Menu from "./Menu";
 
 function App(props){
   var body = {
-    margin: 20,
+    margin: 100,
+    textAlign: 'center',
   }
   return (
     <div style={body}>
