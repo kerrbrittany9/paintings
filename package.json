@@ -10,11 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "postcss-loader": "^0.13.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-bootstrap": "^0.32.0",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.0.0",
+    "react-slick": "^0.16.0",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.77.1"
   },

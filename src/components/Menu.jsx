@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import About from './About';
+import Gallery from  './Gallery/Gallery';
 
 function Menu(props) {
   var menu = {
@@ -9,7 +10,7 @@ function Menu(props) {
   return (
     <div style={menu}>
         <About />
-        <h3>gallery</h3>
+        <Gallery />
         <h3>drawings</h3>
     </div>
   );
