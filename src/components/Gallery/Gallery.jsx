@@ -1,11 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Slider from 'react-slick';
-// import vincent from './assets/vincent.jpg';
 
 function Gallery(props) {
   var header = {
     textAlign: 'center',
   }
+  var image = {
+    display: 'block',
+  }
+
   return (
     <div>
       <h3 style={header}>gallery</h3>
@@ -20,10 +24,10 @@ function Gallery(props) {
          cssEase="linear"
          className="slick-slider-fade"
        >
-         <div><img alt="Art" /></div>
-         <div><img alt="Things" /></div>
-         <div><img alt="STuff" /></div>
-         <div><img alt="Be" /></div>
+         <div style={image}><img src='./favicon.png' alt="Art" /></div>
+         <div style={image}><img src='./favicon.png' alt="Things" /></div>
+         <div style={image}><img src='./favicon.png' alt="STuff" /></div>
+         <div style={image}><img src='./favicon.png' alt="Be" /></div>
        </Slider>
     </div>
   );

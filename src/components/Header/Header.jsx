@@ -12,11 +12,13 @@ function Header(props) {
     margin: 30
   }
   var image = {
-    margin: 5
+    height: 80,
+    width: 80,
+    marginBottom: 40
   }
   return (
     <div>
-      <h1 style={title}><img style={image} src='./favicon.png'/> BRITTANY MEGAN HARDISON</h1>
+      <h1 style={title}><img style={image} src='./favicon.png'/>BRITTANY MEGAN HARDISON</h1>
       <h2 style={subtitle}>the mechanics of growing up</h2>
     </div>
   );
