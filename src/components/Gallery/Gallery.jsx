@@ -8,27 +8,29 @@ function Gallery(props) {
   }
   var image = {
     display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: 40,
   }
 
   return (
-    <div>
-      <h3 style={header}>gallery</h3>
-        <Slider
-         dots
-         infinite
-         autoplay
-         speed={500}
-         slidesToShow={1}
-         slidesToScroll={1}
-         fade
-         cssEase="linear"
-         className="slick-slider-fade"
-       >
-         <div style={image}><img src='./favicon.png' alt="Art" /></div>
-         <div style={image}><img src='./favicon.png' alt="Things" /></div>
-         <div style={image}><img src='./favicon.png' alt="STuff" /></div>
-         <div style={image}><img src='./favicon.png' alt="Be" /></div>
-       </Slider>
+    <div style={header}>
+      <Slider
+       dots
+       infinite
+       autoplay
+       speed={500}
+       slidesToShow={1}
+       slidesToScroll={1}
+       fade
+       cssEase="linear"
+       className="slick-slider-fade"
+     >
+       <div style={image}><img src='./favicon.png' alt="Art" /></div>
+       <div style={image}><img src='./favicon.png' alt="Things" /></div>
+       <div style={image}><img src='./favicon.png' alt="STuff" /></div>
+       <div style={image}><img src='./favicon.png' alt="Be" /></div>
+     </Slider>
     </div>
   );
 }
