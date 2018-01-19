@@ -1,6 +1,9 @@
 .body {
-  background-image: './mark.jpg';
+  background-image: url('./assets/mark.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .title {
   font-size: 5rem;
   margin: 3rem;
