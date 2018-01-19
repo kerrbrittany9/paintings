@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header/Header";
 import Menu from "./Menu";
-import About from './About';
+import About from './About/About';
 import Gallery from  './Gallery/Gallery';
 import { Switch, Route } from 'react-router-dom';
 

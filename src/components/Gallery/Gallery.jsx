@@ -1,20 +1,14 @@
 import React from 'react';
+import styles from './styles.css';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
+import vincent from  './assets/vincent.jpg';
+import brand from './assets/mark.jpg';
+import img from './assets/IMG_2687.jpg';
 
 function Gallery(props) {
-  var header = {
-    textAlign: 'center',
-  }
-  var image = {
-    display: 'block',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    width: 40,
-  }
-
   return (
-    <div style={header}>
+    <div className = {styles.header}>
       <Slider
        dots
        infinite
@@ -26,10 +20,10 @@ function Gallery(props) {
        cssEase="linear"
        className="slick-slider-fade"
      >
-       <div style={image}><img src='./favicon.png' alt="Art" /></div>
-       <div style={image}><img src='./favicon.png' alt="Things" /></div>
-       <div style={image}><img src='./favicon.png' alt="STuff" /></div>
-       <div style={image}><img src='./favicon.png' alt="Be" /></div>
+       <div className = {styles.image}><img src='./favicon.png' alt="Art" /></div>
+       <div className = {styles.image}><img src={vincent} alt="Things" /></div>
+       <div className = {styles.image}><img src={brand} alt="STuff" /></div>
+       <div className = {styles.image}><img src={img} alt="Be" /></div>
      </Slider>
     </div>
   );

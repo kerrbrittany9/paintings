@@ -1,5 +1,5 @@
 import React from 'react';
-import About from './About';
+import About from './About/About';
 import Gallery from  './Gallery/Gallery';
 import { Link } from 'react-router-dom';
 
