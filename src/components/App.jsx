@@ -1,18 +1,15 @@
 import React from "react";
 import Header from "./Header/Header";
-import Menu from "./Menu";
+import Menu from "./Menu/Menu";
 import About from './About/About';
 import Gallery from  './Gallery/Gallery';
 import Texas from './Gallery/Texas';
+import styles from './styles.css';
 import { Switch, Route } from 'react-router-dom';
 
 function App(props){
-  var body = {
-    margin: 100,
-    textAlign: 'center',
-  }
   return (
-    <div style={body}>
+    <div className = {styles.body}>
       <Header />
       <Menu />
       <Switch>
