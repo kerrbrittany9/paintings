@@ -10,8 +10,8 @@ import { Switch, Route } from 'react-router-dom';
 function App(props){
   return (
     <div className = {styles.body}>
-      <Header />
       <Menu />
+      <Header />
       <Switch>
         <Route exact path="/about" component={About} />
         <Route path="/gallery" component={Gallery} />
