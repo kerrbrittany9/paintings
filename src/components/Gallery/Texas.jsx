@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import vincent from  './assets/vincent.jpg';
 import brand from './assets/mark.jpg';
+import img from './assets/favicon.png';
 
 function Texas(props) {
   return (
@@ -19,7 +20,7 @@ function Texas(props) {
        cssEase="linear"
        className="slick-slider-fade"
      >
-       <div className = {styles.image}><img src='./favicon.png' alt="Art" /></div>
+       <div className = {styles.image}><img src={img} alt="Art" /></div>
        <div className = {styles.image}><img src={vincent} alt="Things" /></div>
        <div className = {styles.image}><img src={brand} alt="STuff" /></div>
      </Slider>

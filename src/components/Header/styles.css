@@ -8,11 +8,14 @@
 .title {
   font-size: 5rem;
   margin: 3rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .subtitle {
   font-size: 4rem;
   margin: 3 rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
 }
 
 .image {
