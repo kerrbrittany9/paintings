@@ -2,9 +2,8 @@ import React from 'react';
 import styles from './styles.css';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
-import vincent from  './assets/vincent.jpg';
-import brand from './assets/mark.jpg';
-import img from './assets/favicon.png';
+import asti from './assets/texas/asti.jpg';
+import bartonsprings from './assets/texas/barton-springs.jpg';
 
 function Texas(props) {
   return (
@@ -20,9 +19,9 @@ function Texas(props) {
        cssEase="linear"
        className="slick-slider-fade"
      >
-       <div className = {styles.image}><img src={img} alt="Art" /></div>
-       <div className = {styles.image}><img src={vincent} alt="Things" /></div>
-       <div className = {styles.image}><img src={brand} alt="STuff" /></div>
+       <div className = {styles.image}><img src={asti} alt="Art" /></div>
+       <div className = {styles.image}><img src={bartonsprings} alt="Things" /></div>
+       <div className = {styles.image}><img src={asti} alt="STuff" /></div>
      </Slider>
     </div>
   );
