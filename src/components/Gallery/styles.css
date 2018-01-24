@@ -2,6 +2,8 @@
   text-align: center;
   font-size: 7rem;
   margin: 3rem;
+  font-variant: small-caps;
+  color: hotpink;
 }
 
 .image {

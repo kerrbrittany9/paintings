@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Gallery(props) {
   return (
     <div className = {styles.header}>
-      <Link to="/Texas">Texas</Link>
+      <Link to="/Texas">texas</Link>
     </div>
   );
 }
