@@ -6,10 +6,19 @@
   color: hotpink;
 }
 
-.image {
+.slider {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 20rem;
+}
+
+.image {
+  display: inline-block;
+  width: 30%;
+  padding: 1rem;
+}
+
+.body {
+  padding: 3rem;
 }

@@ -2,14 +2,17 @@ import React from 'react';
 import styles from './styles.css';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
-import asti from './assets/texas/asti.jpg';
-import bartonsprings from './assets/texas/barton-springs.jpg';
+import asti from './assets/texas/asti1.jpg';
+import bartonsprings from './assets/texas/bartonsprings.jpg';
+import birdsonwires from './assets/texas/birdsondemwires.jpg';
+import bridge from './assets/texas/bridge1.jpg';
 
 function Texas(props) {
   return (
     <div className = {styles.header}>
       <Slider
        dots
+       centerMode={true}
        infinite
        autoplay
        speed={500}
@@ -18,12 +21,16 @@ function Texas(props) {
        fade
        cssEase="linear"
        className="slick-slider-fade"
-     >
-       <div className = {styles.image}><img src={asti} alt="Art" /></div>
-       <div className = {styles.image}><img src={bartonsprings} alt="Things" /></div>
-       <div className = {styles.image}><img src={asti} alt="STuff" /></div>
-     </Slider>
-    </div>
+      >
+        <div className = {styles.slider}><img src={asti} alt="Art" /></div>
+        <div className = {styles.slider}><img src={bartonsprings} alt="Things" /></div>
+        <div className = {styles.slider}><img src={birdsonwires} alt="STuff" /></div>
+      </Slider>
+      <div className = {styles.body}>
+        <img className = {styles.image} src={bridge} alt="bridge"/>
+        <img className = {styles.image} src={bridge} alt="bridge"/>
+      </div>
+  </div>
   );
 }
 
