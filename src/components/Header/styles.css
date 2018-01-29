@@ -1,21 +1,15 @@
 .body {
-  background-image: url('./assets/images.jpeg');
+  background-image: url('./assets/gas.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 3rem;
   font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.subtitle {
-  font-size: 4rem;
-  margin: 3 rem;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bo;
+  color: salmon;
 }
 
 .image {
