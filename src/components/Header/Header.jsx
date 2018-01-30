@@ -4,7 +4,7 @@ import styles from './styles.css';
 
 function Header(props) {
   return (
-    <div className = {styles.body}>
+    <div>
       <h1 className = {styles.title}>BRITTANY MEGAN HARDISON</h1>
     </div>
   );

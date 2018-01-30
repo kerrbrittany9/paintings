@@ -1,15 +1,16 @@
 .menu {
-  margin: 1rem;
+  margin: 1rem 0 1rem;
   color: salmon;
   font-size: 18px;
+  float: right;
 }
 
 a:link {
-    color: black;
+    color: hotpink;
 }
 
 a:visited {
-    color: black;
+    color: hotpink;
 }
 
 a:hover {
