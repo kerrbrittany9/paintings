@@ -3,12 +3,12 @@ import About from '../About/About';
 import Gallery from  '../Gallery/Gallery';
 import styles from './styles.css';
 import { Link } from 'react-router-dom';
-import { slide as Menu } from 'react-burger-menu';
+import { bubble as Menu } from 'react-burger-menu';
 
 function Menew(props) {
   return (
     <Menu>
-      <div className={styles.menu}>
+      <div>
         <Link to="/About">About</Link> |
         <Link to="/Gallery">Gallery</Link> |
         <Link to="/Drawings">Drawings</Link>
