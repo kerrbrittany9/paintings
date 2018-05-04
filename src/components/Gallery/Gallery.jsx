@@ -2,12 +2,14 @@ import React from 'react';
 import styles from './styles.css';
 import PropTypes from 'prop-types';
 import Texas from './Texas';
+import Drawings from './Drawings';
 import { Link } from 'react-router-dom';
 
 function Gallery(props) {
   return (
     <div className = {styles.header}>
-      <p>let's see<Link to="/Texas"> texas</Link></p>
+      <Link className = {styles.link} to="/Texas"> let's see texas</Link>
+      <Link className = {styles.link} to="/Drawings"> drawings</Link>
     </div>
   );
 }

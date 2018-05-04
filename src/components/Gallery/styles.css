@@ -7,6 +7,12 @@
   cursor: pointer;
 }
 
+.link {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+}
+
 .slider {
   display: block;
   margin-left: auto;

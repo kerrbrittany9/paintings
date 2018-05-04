@@ -47,8 +47,7 @@ function Menew(props) {
       <div>
         <Link id="home" className="menu-item" to="/">Home</Link> |
         <Link id="about" className="menu-item" to="/About">About</Link> |
-        <Link id="gallery" className="menu-item" to="/Gallery">Gallery</Link> |
-        <Link id="drawings" className="menu-item" to="/Drawings">Drawings</Link>
+        <Link id="gallery" className="menu-item" to="/Gallery">Gallery</Link> 
       </div>
     </Menu>
   );
