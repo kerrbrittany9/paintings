@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 function Drawings(props) {
   return (
+    <div>
       <p>These are drawings</p>
+    </div>
   );
 }
 

@@ -9,8 +9,7 @@
 
 .link {
   display: block;
-  padding: 1rem;
-  margin: 1rem;
+  line-height: 6rem;
 }
 
 .slider {
