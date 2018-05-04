@@ -12,6 +12,13 @@
   line-height: 6rem;
 }
 
+.linkAgain {
+  display: block;
+  line-height: 6rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
 .slider {
   display: block;
   margin-left: auto;
