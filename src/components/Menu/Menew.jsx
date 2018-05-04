@@ -45,8 +45,8 @@ function Menew(props) {
 
     <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
       <div>
-        <Link id="home" className="menu-item" to="/">Home</Link> |
-        <Link id="about" className="menu-item" to="/About">About</Link> |
+        <Link id="home" className="menu-item" to="/">Home</Link> 
+        <Link id="about" className="menu-item" to="/About">About</Link> 
         <Link id="gallery" className="menu-item" to="/Gallery">Gallery</Link> 
       </div>
     </Menu>
