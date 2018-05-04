@@ -3,21 +3,22 @@
 }
 
 a:link {
-    color: hotpink;  
+    color: #EC8677;  
     display: block;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    font-size: 2rem;
 }
 
 a:visited {
-    color: hotpink;
+    color: #EC8677;
 }
 
 a:hover {
-    color: hotpink;
+    color: #9d9a9a;
 }
 
 a:active {
-    color: hotpink;
+    color: #EC8677;
 }
 
 .bm-burger-button {

@@ -16,17 +16,17 @@ function Menew(props) {
       top: '36px'
     },
     bmBurgerBars: {
-      background: '#373a47'
+      background: '#9d9a9a'
     },
     bmCrossButton: {
       height: '24px',
       width: '24px'
     },
     bmCross: {
-      background: '#bdc3c7'
+      background: '#9d9a9a'
     },
     bmMenu: {
-      background: '#373a47',
+      background: '#B4C5D4',
       padding: '2.5em 1.5em 0',
       fontSize: '1.15em'
     },
@@ -46,7 +46,7 @@ function Menew(props) {
     <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
       <div>
         <Link id="home" className="menu-item" to="/">Home</Link> 
-        <Link id="about" className="menu-item" to="/About">About</Link> 
+        <Link id="about" className="menu-item" to="/About">About</Link>
         <Link id="gallery" className="menu-item" to="/Gallery">Gallery</Link> 
       </div>
     </Menu>
