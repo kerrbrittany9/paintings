@@ -1,6 +1,6 @@
 import React from 'react';
-import About from '../About/About';
-import Gallery from  '../Gallery/Gallery';
+import About from '../routes/About/About';
+import Gallery from  '../routes/Gallery/Gallery';
 import styles from './styles.css';
 import { Link } from 'react-router-dom';
 import { push as Menu } from 'react-burger-menu';
