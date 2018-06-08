@@ -9,7 +9,7 @@ function Gallery(props) {
   return (
     <div className = {styles.header}>
       <Link className = {styles.link} to="/Texas"> let's see texas</Link>
-      <Link className = {styles.linkAgain} to="/Drawings"> drawings</Link>
+      <Drawings/>
     </div>
   );
 }
