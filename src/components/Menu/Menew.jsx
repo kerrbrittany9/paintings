@@ -23,7 +23,7 @@ function Menew(props) {
       width: '24px'
     },
     bmCross: {
-      background: '#9d9a9a'
+      background: '#fff'
     },
     bmMenu: {
       background: '#B4C5D4',
@@ -44,10 +44,10 @@ function Menew(props) {
   return (
 
     <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-      <div>
-        <Link id="home" className="menu-item" to="/">Home</Link> 
-        <Link id="about" className="menu-item" to="/About">About</Link>
-        <Link id="gallery" className="menu-item" to="/Gallery">Gallery</Link> 
+      <div className="linking">
+        <Link className="navbar" id="home" to="/">Home</Link> 
+        <Link className="navbar" id="about" to="/About">About</Link>
+        <Link className="navbar" id="gallery" to="/Gallery">Gallery</Link> 
       </div>
     </Menu>
   );
