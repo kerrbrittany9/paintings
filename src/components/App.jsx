@@ -16,14 +16,12 @@ class App extends React.Component {
         <div className={styles.body}>
           <Menew />
           <main id="page-wrap">
-            <Header />
-            <Home />
           </main>
           <Switch>
             <Route exact path="/about" component={About} />
             <Route path="/gallery" component={Gallery} />
             {/* <Route path="/Texas" component={Texas} /> */}
-            <Route path="/#/" component={App} />
+            <Route path="/" component={Home} />
           </Switch>
         </div>
       </div>
