@@ -3,7 +3,7 @@ import About from '../routes/About/About';
 import Gallery from  '../routes/Gallery/Gallery';
 import styles from './styles.css';
 import { Link } from 'react-router-dom';
-import { push as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import PropTypes from 'prop-types';
 
 function Menew(props) {
@@ -28,8 +28,18 @@ function Menew(props) {
     bmMenu: {
       background: '#B4C5D4',
       padding: '2.5em 1.5em 0',
-      fontSize: '1.15em'
+      fontSize: '1.15em',
     },
+    // bmMenuWrap: {
+    //   position: "fixed",
+    //   right: "inherit",
+    //   zIndex: "1100px",
+    //   width: "300px",
+    //   height: "100%", 
+    //   transition: "all 0.5s",
+    //   transform: "translate3d(-100%, 0px, 0px)",
+    //   marginRight: "-500px"
+    // },
     bmMorphShape: {
       fill: '#373a47'
     },
@@ -42,14 +52,13 @@ function Menew(props) {
     }
   }
   return (
-
-    <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-      <div className="linking">
-        <Link className="navbar" id="home" to="/">Home</Link> 
-        <Link className="navbar" id="about" to="/About">About</Link>
-        <Link className="navbar" id="gallery" to="/Gallery">Gallery</Link> 
-      </div>
-    </Menu>
+      <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+        <div className="linking">
+          <Link className="navbar" id="home" to="/">Home</Link> 
+          <Link className="navbar" id="about" to="/About">About</Link>
+          <Link className="navbar" id="gallery" to="/Gallery">Gallery</Link> 
+        </div>
+      </Menu>
   );
 }
 

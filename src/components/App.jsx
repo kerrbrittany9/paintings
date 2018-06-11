@@ -13,17 +13,15 @@ class App extends React.Component {
   render() {
     return (
       <div id="outer-container">
-        <div className={styles.body}>
-          <Menew />
-          <main id="page-wrap">
-          </main>
-          <Switch>
-            <Route exact path="/about" component={About} />
-            <Route path="/gallery" component={Gallery} />
-            {/* <Route path="/Texas" component={Texas} /> */}
-            <Route path="/" component={Home} />
-          </Switch>
-        </div>
+        <Menew />
+        <Switch>
+          <Route exact path="/about" component={About} />
+          <Route path="/gallery" component={Gallery} />
+          {/* <Route path="/Texas" component={Texas} /> */}
+          <Route path="/" component={Home} />
+        </Switch>
+        <main id="page-wrap">
+        </main>
       </div>
     );
   }
