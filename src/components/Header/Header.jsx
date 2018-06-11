@@ -7,7 +7,6 @@ function Header(props) {
   return (
     <div>
       <h1 className = {styles.title}>BRITTANY MEGAN HARDISON</h1>
-      <Body />
     </div>
   );
 }
