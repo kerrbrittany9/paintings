@@ -1,22 +1,21 @@
-.linking a:link {
-    color: #fff;  
+a:link {
+    color: #EC8677;  
     display: block;
     padding-top: 1.5rem;
     font-size: 2rem;
 }
 
-.navbar a:visited {
-    color: #fff; 
+a:visited {
+    color: #EC8677; 
     
 }
 
-.navbar a:hover {
-    color: #EC8677;
-   
+a:hover {
+    color: pink;
 }
 
-.navbar a:active {
-    color: #fff;
+a:active {
+    color:pink;
   
 }
 
