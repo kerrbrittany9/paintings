@@ -30,16 +30,6 @@ function Menew(props) {
       padding: '2.5em 1.5em 0',
       fontSize: '1.15em',
     },
-    // bmMenuWrap: {
-    //   position: "fixed",
-    //   right: "inherit",
-    //   zIndex: "1100px",
-    //   width: "300px",
-    //   height: "100%", 
-    //   transition: "all 0.5s",
-    //   transform: "translate3d(-100%, 0px, 0px)",
-    //   marginRight: "-500px"
-    // },
     bmMorphShape: {
       fill: '#373a47'
     },
@@ -53,7 +43,7 @@ function Menew(props) {
   }
   return (
       <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-        <div className="linking">
+        <div>
           <Link className="navbar" id="home" to="/">Home</Link> 
           <Link className="navbar" id="about" to="/About">About</Link>
           <Link className="navbar" id="gallery" to="/Gallery">Gallery</Link> 
