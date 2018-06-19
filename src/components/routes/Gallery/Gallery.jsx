@@ -6,17 +6,36 @@ import Drawings from "./Drawings";
 import Header from '../../Header/Header';
 import { Link } from "react-router-dom";
 
-function Gallery(props) {
-  return (
-    <div className={styles.header}>
-      <Header />
-      <Link className={styles.link} to="/Texas">
-        {" "}
-        let's see texas
-      </Link>
-      <Drawings />
-    </div>
-  );
+class Gallery extends React.Component {
+  constructor () {
+    super()
+    this.state = {
+      isHidden: true
+    }
+  }
+  toggleHidden () {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
+  render () {
+    return (
+    // <div className={styles.header}>
+    //       <Header />
+    //       <Drawings />
+    //   </div>
+      <div>
+        <button onClick={this.toggleHidden.bind(this)} >
+          Click to show Texas
+        </button>
+        {!this.state.isHidden && <Texas />}
+        </div>
+    )
+  }
 }
+
+// const Texas = () => (
+//   <h1>this is texas</h1>
+// );
 
 export default Gallery;

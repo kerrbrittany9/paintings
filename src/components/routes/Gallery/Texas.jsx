@@ -30,6 +30,7 @@ function Texas(props) {
         <img className = {styles.image} src={bridge} alt="bridge"/>
         <img className = {styles.image} src={bridge} alt="bridge"/>
       </div>
+      {/* <h1>this is texas</h1> */}
   </div>
   );
 }
