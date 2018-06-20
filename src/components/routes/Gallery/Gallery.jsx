@@ -10,32 +10,35 @@ class Gallery extends React.Component {
   constructor () {
     super()
     this.state = {
-      isHidden: true
+      TexasisHidden: true,
+      DrawingsisHidden: true
     }
   }
-  toggleHidden () {
+  toggleHiddenTexas () {
     this.setState({
-      isHidden: !this.state.isHidden
+      TexasisHidden: !this.state.TexasisHidden
+    })
+  }
+  toggleHiddenDrawings() {
+    this.setState({
+      DrawingsisHidden: !this.state.DrawingsisHidden
     })
   }
   render () {
     return (
-    // <div className={styles.header}>
-    //       <Header />
-    //       <Drawings />
-    //   </div>
-      <div>
-        <button onClick={this.toggleHidden.bind(this)} >
+      <div className={styles.header}>
+        <Header />
+        <button onClick={this.toggleHiddenDrawings.bind(this)} >
+          Click to show Drawings
+        </button>
+        {!this.state.DrawingsisHidden && <Drawings />}
+        <button onClick={this.toggleHiddenTexas.bind(this)} >
           Click to show Texas
         </button>
-        {!this.state.isHidden && <Texas />}
-        </div>
+        {!this.state.TexasisHidden && <Texas />}
+      </div>
     )
   }
 }
-
-// const Texas = () => (
-//   <h1>this is texas</h1>
-// );
 
 export default Gallery;
