@@ -32,7 +32,6 @@ class App extends React.Component {
     this.setState({ menuOpen: !this.state.menuOpen })
   }
 
-
   render() {
     var styles = {
       bmBurgerButton: {
@@ -70,23 +69,22 @@ class App extends React.Component {
     }
 
     return (
-      <div id="outer-container">
-        <Menu isOpen={this.state.menuOpen} onStateChange={(state) => {this.handleStateChange(state)}} styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
-          <div>
-            <Link onClick={() => {this.closeMenu()}} className="navbar" id="home" to="/">Home</Link>
-            <Link onClick={() => {this.closeMenu()}} className="navbar" id="about" to="/About">About</Link>
-            <Link onClick={() => {this.closeMenu()}} className="navbar" id="gallery" to="/Gallery">Gallery</Link>
-          </div>
-        </Menu>
-
-        <Switch>
-          <Route exact path="/about" component={About} />
-          <Route path="/gallery" component={Gallery} />
-          <Route path="/" component={Home} />
-        </Switch>
-        <main id="page-wrap">
-        </main>
-      </div>
+        <div id="outer-container">
+          <Menu isOpen={this.state.menuOpen} onStateChange={(state) => {this.handleStateChange(state)}} styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+            <div>
+              <Link onClick={() => {this.closeMenu()}} className="navbar" id="home" to="/">Home</Link>
+              <Link onClick={() => {this.closeMenu()}} className="navbar" id="about" to="/About">About</Link>
+              <Link onClick={() => {this.closeMenu()}} className="navbar" id="gallery" to="/Gallery">Gallery</Link>
+            </div>
+          </Menu>
+          <Switch>
+            <Route exact path="/about" component={About} />
+            <Route path="/gallery" component={Gallery} />
+            <Route path="/" component={Home} />
+          </Switch>
+          <main id="page-wrap">
+          </main>
+        </div>
     );
   }
 }
