@@ -9,7 +9,7 @@ import bridge from './assets/texas/bridge1.jpg';
 
 function Texas(props) {
   return (
-    <div className = {styles.header}>
+    <div>
       <Slider
        dots
        centerMode={true}
