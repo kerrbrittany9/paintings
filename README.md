@@ -8,3 +8,4 @@
 - narrow down click-area for gallery links
 - make the app response with media-queries
 - font on all pages
+- make a container on gallery and nest components within
