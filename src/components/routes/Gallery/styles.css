@@ -1,29 +1,16 @@
-.header {
+.container {
+  margin: 1rem;
+}
+
+.link {
+  position: relative;
+  top: 3rem;
   text-align: center;
   font-size: 7rem;
   margin: 3rem;
   font-variant: small-caps;
   color: hotpink;
   cursor: pointer;
-}
-
-.link {
-  display: block;
-  color: hotpink;
-  line-height: 5rem;
-  height: 6rem;
-  margin: .5rem;
-  padding-bottom: .5rem;
-  text-decoration: none;
-}
-
-.linkAgain {
-  display: block;
-  color: hotpink;
-  line-height: 3rem;
-  height: 6rem;
-  padding-top: .5rem;
-  text-decoration: none;
 }
 
 .slider {
