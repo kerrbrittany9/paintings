@@ -19,27 +19,25 @@ class Gallery extends React.Component {
     return (
       <div>
         <Header />
-        <div className={styles.container}>
-            <div className={styles.link}>
-              <div onClick={() => this.setState({ DrawingsisHidden: !this.state.DrawingsisHidden })}>
-                {this.state.DrawingsisHidden ? (
-                  <button>
-                    Click to show Drawings
-                  </button> 
+          <div className={styles.link}>
+            <div onClick={() => this.setState({ DrawingsisHidden: !this.state.DrawingsisHidden })}>
+              {this.state.DrawingsisHidden ? (
+                <button>
+                  Click to show Drawings
+                </button> 
+              ) : (
+                <Drawings />
+              )}
+            </div>
+            
+            <div onClick={() => this.setState({ TexasisHidden: !this.state.TexasisHidden })} >
+              {this.state.TexasisHidden ? (
+                <button>
+                  Click to show Texas
+                </button>
                 ) : (
-                  <Drawings />
-                )}
-              </div>
-              
-              <div onClick={() => this.setState({ TexasisHidden: !this.state.TexasisHidden })} >
-                {this.state.TexasisHidden ? (
-                  <button>
-                    Click to show Texas
-                  </button>
-                  ) : (
-                    <Texas />
-                )}
-              </div>
+                  <Texas />
+              )}
             </div>
           </div>
         </div>
