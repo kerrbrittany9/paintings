@@ -70,12 +70,10 @@ class App extends React.Component {
 
     return (
         <div id="outer-container">
-          <Menu isOpen={this.state.menuOpen} onStateChange={(state) => {this.handleStateChange(state)}} styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
-            <div>
-              <Link onClick={() => {this.closeMenu()}} className="navbar" id="home" to="/">Home</Link>
-              <Link onClick={() => {this.closeMenu()}} className="navbar" id="about" to="/About">About</Link>
-              <Link onClick={() => {this.closeMenu()}} className="navbar" id="gallery" to="/Gallery">Gallery</Link>
-            </div>
+        <Menu isOpen={this.state.menuOpen} onStateChange={(state) => { this.handleStateChange(state) }} styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+            <Link onClick={() => {this.closeMenu()}} className="menu-item" id="home" to="/">Home</Link>
+            <Link onClick={() => {this.closeMenu()}} className="menu-item" id="about" to="/About">About</Link>
+            <Link onClick={() => {this.closeMenu()}} className="menu-item" id="gallery" to="/Gallery">Gallery</Link>
           </Menu>
           <Switch>
             <Route exact path="/about" component={About} />
