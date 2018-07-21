@@ -6,16 +6,17 @@
   position: relative;
   top: 3rem;
   text-align: center;
-  margin: 3rem;
   font-variant: small-caps;
   color: hotpink;
   cursor: pointer;
+  display: flex;
 }
 
 .link button {
   font-size: 3rem;
   border: none;
-  display: inherit;
+  width: 40%;
+  
 }
 
 .slider {
