@@ -23,7 +23,7 @@ class Gallery extends React.Component {
             <div onClick={() => this.setState({ DrawingsisHidden: !this.state.DrawingsisHidden })}>
               {this.state.DrawingsisHidden ? (
                 <button>
-                  Click to show Drawings
+                  Drawings
                 </button> 
               ) : (
                 <Drawings />
@@ -33,7 +33,7 @@ class Gallery extends React.Component {
             <div onClick={() => this.setState({ TexasisHidden: !this.state.TexasisHidden })} >
               {this.state.TexasisHidden ? (
                 <button>
-                  Click to show Texas
+                  Texas
                 </button>
                 ) : (
                   <Texas />
