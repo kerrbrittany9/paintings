@@ -3,8 +3,8 @@ import Header from "./Header/Header";
 import Menew from "./Menu/Menew";
 import About from "./routes/About/About";
 import Home from "./routes/Home/Home";
-import Gallery from "./routes/Gallery/Gallery";
-import Texas from "./routes/Gallery/Texas";
+import Texas from "./routes/Texas/Texas";
+import Drawings from "./routes/Drawings/Drawings";
 import styles from "./styles.css";
 import { Switch, Route } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -73,11 +73,13 @@ class App extends React.Component {
         <Menu isOpen={this.state.menuOpen} onStateChange={(state) => { this.handleStateChange(state) }} styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
             <Link onClick={() => {this.closeMenu()}} className="menu-item" id="home" to="/">Home</Link>
             <Link onClick={() => {this.closeMenu()}} className="menu-item" id="about" to="/About">About</Link>
-            <Link onClick={() => {this.closeMenu()}} className="menu-item" id="gallery" to="/Gallery">Gallery</Link>
+            <Link onClick={() => {this.closeMenu()}} className="menu-item" id="Texas" to="/Texas">Texas</Link>
+            <Link onClick={() => { this.closeMenu() }} className="menu-item" id="Drawings" to="/Drawings">Drawings</Link>
           </Menu>
           <Switch>
             <Route exact path="/about" component={About} />
-            <Route path="/gallery" component={Gallery} />
+            <Route path="/texas" component={Texas} />
+            <Route path="/drawings" component={Drawings} />
             <Route path="/" component={Home} />
           </Switch>
           <main id="page-wrap">

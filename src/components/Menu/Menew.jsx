@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../routes/About/About';
-import Gallery from  '../routes/Gallery/Gallery';
+import Texas from  '../routes/Texas/Texas';
+import Drawings from '../routes/Drawings/Drawings';
 import styles from './styles.css';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
@@ -46,7 +47,8 @@ function Menew(props) {
         <div>
           <Link className="navbar" id="home" to="/">Home</Link> 
           <Link className="navbar" id="about" to="/About">About</Link>
-          <Link className="navbar" id="gallery" to="/Gallery">Gallery</Link> 
+          <Link className="navbar" id="gallery" to="/Texas">Texas</Link> 
+          <Link className="navbar" id="gallery" to="/Drawings">Drawings</Link> 
         </div>
       </Menu>
   );

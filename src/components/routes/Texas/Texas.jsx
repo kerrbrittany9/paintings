@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from './styles.css';
+// import styles from './styles.css';
 import PropTypes from 'prop-types';
-import Slider from 'react-slick';
-import asti from './assets/texas/asti1.jpg';
-import bartonsprings from './assets/texas/bartonsprings.jpg';
-import birdsonwires from './assets/texas/birdsondemwires.jpg';
-import bridge from './assets/texas/bridge1.jpg';
+// import Slider from 'react-slick';
+// import asti from './assets/texas/asti1.jpg';
+// import bartonsprings from './assets/texas/bartonsprings.jpg';
+// import birdsonwires from './assets/texas/birdsondemwires.jpg';
+// import bridge from './assets/texas/bridge1.jpg';
 
 function Texas(props) {
   return (
     <div>
-      <Slider
+      {/* <Slider
        dots
        centerMode={true}
        infinite
@@ -29,8 +29,8 @@ function Texas(props) {
       <div className = {styles.body}>
         <img className = {styles.image} src={bridge} alt="bridge"/>
         <img className = {styles.image} src={bridge} alt="bridge"/>
-      </div>
-      {/* <h1>this is texas</h1> */}
+      </div> */}
+      <h1>this is texas</h1>
   </div>
   );
 }
