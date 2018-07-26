@@ -1,6 +1,10 @@
 import React from 'react';
 // import styles from './styles.css';
 import PropTypes from 'prop-types';
+import styles from "./styles.css";
+import Header from '../../Header/Header';
+
+
 // import Slider from 'react-slick';
 // import asti from './assets/texas/asti1.jpg';
 // import bartonsprings from './assets/texas/bartonsprings.jpg';
@@ -10,6 +14,7 @@ import PropTypes from 'prop-types';
 function Texas(props) {
   return (
     <div>
+      <Header />
       {/* <Slider
        dots
        centerMode={true}
@@ -30,7 +35,7 @@ function Texas(props) {
         <img className = {styles.image} src={bridge} alt="bridge"/>
         <img className = {styles.image} src={bridge} alt="bridge"/>
       </div> */}
-      <h1>this is texas</h1>
+      <h1 >this is texas</h1>
   </div>
   );
 }
