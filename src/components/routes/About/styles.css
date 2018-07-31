@@ -1,5 +1,24 @@
-.typing {
-  text-align: justify;
-  font-size: 1.5rem;
-  padding: 6rem;
-}
+
+  .typing {    
+    padding: 7rem;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  
+  .typing img {
+    width: 30rem;
+    height: 30rem;
+    float: right;
+  }
+
+  @media screen and (max-width: 47.938em) {
+    .typing {
+      padding: 5rem;
+      text-align: justify;
+      color: pink;
+    }
+  
+    .typing img {
+      width: 100%;
+    }
+  }
