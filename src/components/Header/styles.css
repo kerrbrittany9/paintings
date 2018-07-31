@@ -5,19 +5,9 @@
   color: salmon;
   float: right;
 }
-.initials {
-  display: none;
-}
 
 @media screen and (max-width: 47.938em) {
   .title {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: salmon;
-    float: right;
-  }
-  .initials {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-family: 'Open Sans Condensed', sans-serif;
